@@ -1,0 +1,4 @@
+/pycache/
+/migrations/
+*.pyc
+prod_settings.py
