@@ -9,6 +9,9 @@
 <form action="." method="post">
     {%csrf_token%}
     {{form.as_p}}
-    <button class="btn btn-outline-success" type="submit">Log-in</button>
+    <button class="btn btn-outline-success mb-2" type="submit">Log-in</button>
 </form>
+<p><a href="{% url 'password_reset'%}">Forgotten your password?</a></p>
+<p><a href="{%url 'RegistrationView'%}">Registration</a></p>
+<p><a href="{% url 'social:begin' 'google-oauth2' %}" class="btn btn-danger">login with Google</a></p>
 {%endblock%}
